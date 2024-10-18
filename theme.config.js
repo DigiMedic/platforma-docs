@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 export default {
-  logo: <span>DigiMedic Dokumentace</span>,
+  logo: <Image src="/logo.png" alt="DigiMedic Logo" width={200} height={50} />,
   project: {
-    link: 'https://github.com/yourusername/digimedic-docs',
+    link: 'https://github.com/DigiMedic/digimedic-docs',
   },
-  docsRepositoryBase: 'https://github.com/yourusername/digimedic-docs/blob/main',
+  docsRepositoryBase: 'https://github.com/DigiMedic/digimedic-docs/blob/main',
   footer: {
     text: '© 2023 DigiMedic. Všechna práva vyhrazena.',
   },
@@ -12,7 +14,10 @@ export default {
       titleTemplate: '%s – DigiMedic Dokumentace'
     }
   },
+  head: null,
+  faviconGlyph: '🏥',
   sidebar: {
     defaultMenuCollapseLevel: 1,
   },
+  primaryHue: 203,
 }

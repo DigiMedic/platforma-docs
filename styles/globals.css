@@ -1,0 +1,37 @@
+:root {
+  --dark-blue: #1B4D6A;
+  --medium-blue: #5B8A9A;
+  --light-blue: #5BA2C2;
+  --very-light-blue: #A8D4E1;
+  --lightest-blue: #E7F5F8;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+  color: var(--dark-blue);
+}
+
+a {
+  color: var(--medium-blue);
+}
+
+a:hover {
+  color: var(--light-blue);
+}
+
+.nx-bg-primary-50 {
+  background-color: var(--lightest-blue);
+}
+
+.nx-text-primary-600 {
+  color: var(--dark-blue);
+}
+
+.nx-border-primary-500 {
+  border-color: var(--medium-blue);
+}
