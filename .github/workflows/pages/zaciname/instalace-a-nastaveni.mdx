@@ -1,0 +1,54 @@
+# Instalace a nastavení DigiMedic
+
+Tento průvodce vás provede procesem instalace a základního nastavení platformy DigiMedic.
+
+## Systémové požadavky
+
+- Node.js verze 14 nebo vyšší
+- npm verze 6 nebo vyšší
+- Moderní webový prohlížeč (Chrome, Firefox, Safari, Edge)
+
+## Kroky instalace
+
+1. **Klonování repozitáře**
+   ```bash
+   git clone https://github.com/vase-organizace/digimedic.git
+   cd digimedic   ```
+
+2. **Instalace závislostí**
+   ```bash
+   npm install   ```
+
+3. **Konfigurace prostředí**
+
+   Vytvořte soubor `.env.local` v kořenovém adresáři projektu a nastavte potřebné proměnné prostředí:
+   ```
+   DATABASE_URL=your_database_url
+   API_KEY=your_api_key   ```
+
+4. **Spuštění vývojového serveru**
+   ```bash
+   npm run dev   ```
+
+   Aplikace bude dostupná na `http://localhost:3000`.
+
+## Základní nastavení
+
+1. **Vytvoření administrátorského účtu**
+   
+   Navštivte `/admin/setup` ve vašem prohlížeči a vytvořte první administrátorský účet.
+
+2. **Konfigurace zdravotnického zařízení**
+   
+   V administrátorském rozhraní nastavte základní informace o vašem zdravotnickém zařízení.
+
+3. **Nastavení služeb**
+   
+   Definujte služby, které vaše zařízení poskytuje, včetně cen a dostupnosti.
+
+## Další kroky
+
+- Projděte si [uživatelskou dokumentaci](/uzivatelska-dokumentace) pro detailní informace o používání systému.
+- Seznamte se s [API dokumentací](/vyvojarska-dokumentace/api-dokumentace), pokud plánujete integraci s jinými systémy.
+
+V případě problémů nebo dotazů neváhejte kontaktovat naši [technickou podporu](/kontakt).

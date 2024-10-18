@@ -1,0 +1,57 @@
+# Architektura systému
+
+<MermaidDiagram chart={`
+graph TD
+    A[Frontend - Next.js] --> B[API Gateway]
+    B --> C[Mikroslužby]
+    C --> D[Databáze]
+    C --> E[Autentizace]
+    C --> F[Integrace]
+`} />
+
+DigiMedic využívá moderní mikroslužbovou architekturu, která zajišťuje flexibilitu, škálovatelnost a snadnou údržbu systému.
+
+## Hlavní komponenty
+
+1. **Frontend aplikace**
+   - Postaveno na Next.js a React
+   - Server-side rendering pro optimální výkon a SEO
+   - Responzivní design pomocí Tailwind CSS
+
+2. **Backend služby**
+   - RESTful API pro komunikaci s frontendem
+   - Mikroslužby pro jednotlivé funkcionality (např. správa pacientů, rezervace, telemedicína)
+
+3. **Databáze**
+   - Flexibilní volba mezi Supabase (PostgreSQL) a Firebase
+   - Real-time funkce pro okamžitou synchronizaci dat
+
+4. **Autentizace a autorizace**
+   - OAuth 2.0 pro bezpečné přihlašování
+   - Role-based access control (RBAC) pro správu oprávnění
+
+5. **Integrační vrstva**
+   - API Gateway pro centralizovanou správu a zabezpečení API
+   - Integrace s externími systémy (např. zdravotní pojišťovny, laboratoře)
+
+6. **Bezpečnostní vrstva**
+   - End-to-end šifrování citlivých dat
+   - Pravidelné bezpečnostní audity a penetrační testy
+
+7. **Monitorování a logování**
+   - Centralizovaný systém pro sběr a analýzu logů
+   - Real-time monitorování výkonu a dostupnosti služeb
+
+## Diagram architektury
+
+[Zde bude umístěn diagram architektury systému]
+
+## Tok dat
+
+1. Uživatel interaguje s frontend aplikací
+2. Frontend komunikuje s backend službami přes API Gateway
+3. Backend služby zpracovávají požadavky a komunikují s databází
+4. Data jsou synchronizována v reálném čase mezi všemi komponentami
+5. Výsledky jsou vráceny uživateli přes frontend
+
+Tato architektura zajišťuje vysokou dostupnost, škálovatelnost a bezpečnost systému DigiMedic, což je klíčové pro spolehlivé fungování v oblasti zdravotnictví.
