@@ -27,6 +27,10 @@ Pro spuštění projektu lokálně postupujte následovně:
 
 3. Otevřete prohlížeč a přejděte na `http://localhost:3000`
 
+## Sestavení projektu pro produkci
+
+Pro sestavení projektu pro produkční nasazení použijte:
+
 ## Struktura projektu
 
 - `pages/`: Obsahuje všechny stránky dokumentace
